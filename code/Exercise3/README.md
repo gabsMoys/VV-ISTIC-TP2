@@ -2,7 +2,7 @@
 
 Put here all the code created for this exercise
 
-Le main est légèrement modifié pour permettre l'écriture sur un fichier de sorties (n'ayant pas testé le packaging en jar j'ai lassé des chemins en dur dans le main)
+Le main est légèrement modifié pour permettre l'écriture sur un fichier de sortie (n'ayant pas testé le packaging en jar j'ai laissé des chemins en dur dans le main)
 ```
 import java.io.File;
 import java.io.FileOutputStream;
