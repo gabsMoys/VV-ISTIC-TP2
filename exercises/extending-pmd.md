@@ -74,19 +74,22 @@ public static int size(final Object object) {
     }
 ```
 
-1) Application de la regle sur le projet https://github.com/apache/commons-collections
-commande : ```pmd check -f text -R /home/gaby/VV/repoTP2/VV-ISTIC-TP2/exercises/myRuleSet.xml -d /home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4```
+1) Application de la regle sur le projet https://github.com/apache/commons-collections  
+commande :
+```
+pmd check -f text -R /home/gaby/VV/repoTP2/VV-ISTIC-TP2/exercises/myRuleSet.xml -d /home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4
+```
 
 resultats :
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/MapUtils.java:226:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/MapUtils.java:926:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/comparators/ComparatorChain.java:280:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/map/CompositeMap.java:137:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/set/CompositeSet.java:372:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java:163:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java:887:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
-/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java:1217:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/MapUtils.java:226:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement  
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/MapUtils.java:926:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement  
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/comparators/ComparatorChain.java:280:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement  
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/map/CompositeMap.java:137:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement  
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/set/CompositeSet.java:372:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement    
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java:163:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement  
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java:887:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement  
+/home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java:1217:	AtLeastThreeNestedIf:	There are 3 or more nested If Statement  
 
-Après examinations du code pour pour chacun des resultats, il n'y a que des vrais positifs.
+Après examinations du code pour pour chacun des resultats, il n'y a que des vrais positifs.  
 
 
