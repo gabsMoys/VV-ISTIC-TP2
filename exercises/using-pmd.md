@@ -15,6 +15,7 @@ vrai positive retenu : /home/gaby/VV/input_for_exo_2/commons-collections-master/
 
 le code en question : 
 
+```
 public static <O> Collection<O> subtract(final Iterable<? extends O> a,
                                              final Iterable<? extends O> b,
                                              final Predicate<O> p) {
@@ -35,7 +36,7 @@ public static <O> Collection<O> subtract(final Iterable<? extends O> a,
         }
         return list;
     }
-    
+```    
 ligne considérée pour l'exercice : final ArrayList<O> list = new ArrayList<>();
 
 Cette ligne ne respecte pas le principe Dependency Inversion (SOLID) pour deux raisons : 
@@ -60,6 +61,7 @@ On remarque que subtract renvoit une Collection, soit une interface de plus haut
 faux positif retenu : home/gaby/VV/input_for_exo_2/commons-collections-master/src/main/java/org/apache/commons/collections4/keyvalue/DefaultKeyValue.java:83:	CompareObjectsWithEquals:	Use equals() to compare object references.
 
 le code en question :
+```
 /**
      * Sets the key.
      *
@@ -75,7 +77,7 @@ le code en question :
 
         return super.setKey(key);
     }
-    
+ ```   
     
 La comparaison  "if (key == this)" est pertinente, on souhaite bien comparer des références, ajouter une méthode equals ne ferait qu'ajouter une indirection pour au
 final comparer des références, de plus ce serait moins compréhensible, ici on comprend bien que l'on souhaite comparer des références.
