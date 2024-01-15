@@ -3,7 +3,7 @@
 Put here all the code created for this exercise
 
 Le main est légèrement modifié pour permettre l'écriture sur un fichier de sortie (n'ayant pas testé le packaging en jar j'ai laissé des chemins en dur dans le main)
-Les 3 fichiers sont inclut dans ce repertoire au cas ou il y un troncage en fin de ligne à l'affichage.
+Les 3 fichiers sont inclus, l'affichage ne montre pas certaines fin de ligne chez moi.
 ```
 import java.io.File;
 import java.io.FileOutputStream;
