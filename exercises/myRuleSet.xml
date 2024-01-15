@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Rules"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        My custom rules
+    </description>
+
+
+    <!-- Your rules will come here -->
+    <!--<rule ref="/home/gaby/VV/repoTP2/VV-ISTIC-TP2/exercises/nestedIf.xml" />-->
+    <rule name="AtLeastThreeNestedIf"
+      language="java"
+      message="There are 3 or more nested If Statement"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+   	<description>Detect when 3 or more if statement are nested, they do not have to be directly nested</description>
+   	<priority>3</priority>
+ 	<properties>
+      		<property name="version" value="3.1"/>
+      		<property name="xpath">  
+      			<value>
+			<![CDATA[
+			//IfStatement[descendant::IfStatement[descendant::IfStatement and @Else = "false"] and @Else = "false"]
+			]]>
+			</value>   
+     		</property>
+   	</properties>
+	</rule>
+</ruleset>
+

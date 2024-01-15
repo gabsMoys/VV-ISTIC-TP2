@@ -1,0 +1,2 @@
+from package : com.vv.testClasse , in class : ExempleClass , field bb does not have a getter
+from package : com.vv.testClasse , in class : ExempleClass , field ec does not have a getter
