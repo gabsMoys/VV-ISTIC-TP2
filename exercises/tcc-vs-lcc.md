@@ -12,6 +12,7 @@ Deux scénarios où LCC = TCC :
 1 : Une classe avec une cohésion maximale, chaque méthode partage au moins une variable d'instance avec une autre méthode.
 Dans cet exemple, LCC = TCC = 1.
 
+```
 public class HighCohesion {
 	private int x,y,z;
 	
@@ -27,11 +28,12 @@ public class HighCohesion {
 		z = i*y;
 	}
 }
-
+```
 
 2 : Une classe avec une cohésion minimale, l'opposé de l'exemple précédent.
 Dans cet exemple, LCC = TCC = 0.
 
+```
 public class LowCohesion {
 	private int x,y,z;
 	
@@ -48,7 +50,7 @@ public class LowCohesion {
 			z = i;
 	}
 }
-
+```
 
 Could LCC be lower than TCC for any given class?
 
